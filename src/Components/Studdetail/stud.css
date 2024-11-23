@@ -1,0 +1,47 @@
+
+*{
+    margin: auto;
+}
+
+#studenttitle{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+table{
+    margin-top: 10px;
+    width:720px;
+    padding:10px;
+    background-color: beige;
+}
+
+th{
+    background: linear-gradient(180deg,red,black);
+    color:white;
+    padding: 10px;
+    font-size: 20px;
+}
+tbody
+{
+    background-color: black;
+    color: white;
+    padding:0px 10px;
+}
+td{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tdbut{
+    font-size: 17px;
+    background-color: green;
+    padding:4px 8px;
+    cursor: pointer;
+}
+.tdbutdanger{
+    font-size: 17px;
+    background-color: red;
+    padding:4px 8px;
+    cursor: pointer;
+}
