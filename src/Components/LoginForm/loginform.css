@@ -1,0 +1,38 @@
+
+
+*{
+    text-align: center;
+}
+#loginDiv{
+    width:380px;
+    margin: auto;
+    background: linear-gradient(150deg,red,white,red,black);
+    padding:20px;
+    border-radius: 7px 25px;
+}
+
+#logintitle{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.loginform{
+    width: 99%;
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#loginBut{
+    padding:10px;
+    margin-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}

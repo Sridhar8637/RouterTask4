@@ -1,0 +1,35 @@
+#homediv{
+    margin-top: 20px;
+}
+#regformdiv{
+    width:410px;
+    background:linear-gradient(150deg,red,white,red,black);
+    padding:15px;
+    margin: auto;
+    border-radius:26px 8px;
+}
+#regtitle{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.regInput{
+    width: 99%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+#regSubmit{
+    padding:10px;
+    margin-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: blue;
+}
