@@ -9,6 +9,8 @@
     background: linear-gradient(150deg,red,white,red,black);
     padding:8px;
     margin-bottom: 20px;
+    align-items: center;
+    text-decoration: none;
 }
 
 #navBut{
