@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./registerform.css";
-import Studdetails from "../Studdetail/studdetails";
+import { useDispatch } from "react-redux";
+// import Studdetails from "../Studdetail/studdetails";
+import {addStudent} from '../redux/slice.jsx'
+
 
 const Registerform = () => {
 
@@ -19,7 +22,9 @@ const Registerform = () => {
   let [id, setId] = useState(1);
 
   //object
-  let [Objarr, setObjarr] = useState([]);
+  //let [Objarr, setObjarr] = useState([]);
+
+  let dispatch = useDispatch();
 
   //input value
   const ChangeHandler = (e) => {
@@ -50,7 +55,7 @@ const Registerform = () => {
   //form submission 
   const SubmitHandler = (e) => {
     e.preventDefault();
-    console.log('clicked');
+    // console.log('clicked');
 
     //validation
     if (name === '' && age === '' && tenMark === '' && twelveMark === '') {
@@ -82,9 +87,14 @@ const Registerform = () => {
       TwelveMark: twelveMark
     }
 
-    setObjarr([...Objarr, obj]);
-    setId(id + 1);
+    // console.log(obj);
 
+    dispatch(addStudent(obj));
+
+    //increasing the id after everyobj 
+    setId(id + 1)
+
+    //resetting the field empty
     setName('');
     setAge('');
     setTenMark('');
@@ -137,7 +147,7 @@ const Registerform = () => {
           <button id="regSubmit">Submit</button>
         </form>
       </div>
-      <Studdetails objArr={Objarr}/>
+      {/* <Studdetails /> */}
     </div>
   );
 };

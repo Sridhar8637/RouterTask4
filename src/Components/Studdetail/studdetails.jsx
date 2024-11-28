@@ -1,7 +1,11 @@
 import React from "react";
 import "./stud.css";
+import { useSelector } from "react-redux";
 
-const Studdetails = (props) => {
+const Studdetails = () => {
+
+  const state = useSelector((st) => st);
+  const objArr=state.values.studentDetails;
   // const objArr = [
   //   {
   //     id: 1,
@@ -28,7 +32,7 @@ const Studdetails = (props) => {
   return (
     <div>
       <h1 id="studenttitle">Student Details</h1>
-      {props.objArr.length < 1 ? (
+      {objArr.length < 1 ? (
         <p>There is no student details to view</p>
       ) : (
         <table border="1">
@@ -44,7 +48,7 @@ const Studdetails = (props) => {
             </tr>
           </thead>
           <tbody>
-            {props.objArr.map((ob, index) => {
+            {objArr.map((ob, index) => {
               return (
                 <tr key={index + 1}>
                   <td>{index + 1}</td>
